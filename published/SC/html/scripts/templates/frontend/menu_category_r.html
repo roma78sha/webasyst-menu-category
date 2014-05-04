@@ -18,7 +18,7 @@ $(document).ready(function(){
 		$(".menu-category-id" + t).toggleClass("open");
 
 		// медленное разворачивание 
-		t = $("ul.menu-category-id" + t);// alert(t);
+		t = $("ul.menu-category-id" + t);
 		if($(t).hasClass("open")){
 		  $(t).show("slow");
 		} else {
@@ -27,10 +27,10 @@ $(document).ready(function(){
 		e.preventDefault();
 	});
 	
-	$("div.cpt_category_tree li").hover(
+	/* $("div.cpt_category_tree li").hover(
 		function(e){$(e.currentTarget).addClass("hover").prev().addClass("pre-hover");},
 		function(e){$(e.currentTarget).removeClass("hover").prev().removeClass("pre-hover");}
-	);
+	); */
 
 });
 </script>
