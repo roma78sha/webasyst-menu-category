@@ -1,5 +1,4 @@
 {* <!-- menu category module (модуль для webasyst, меню категорий) version: 2.1 --> *}
-
 <div class="cpt_category_tree">
 	{* <h2 class="title_1">{$selected_category.name_ru}</h2>Каталог: *}
 	{$menu_category_result}
@@ -34,6 +33,7 @@ $(document).ready(function(){
 
 });
 </script>
+{* <!-- необходимые для правильной работы css --> *}
 <style type="text/css">
   .cpt_category_tree ul ul{display:none}
   div.cpt_category_tree ul .current, div.cpt_category_tree ul.prebasic{display:block}
