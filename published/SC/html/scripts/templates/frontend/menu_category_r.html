@@ -1,0 +1,41 @@
+{* <!-- menu category module (модуль для webasyst, меню категорий) version: 2.1 --> *}
+
+<div class="cpt_category_tree">
+	{* <h2 class="title_1">{$selected_category.name_ru}</h2>Каталог: *}
+	{$menu_category_result}
+</div>
+{literal}
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+	t = $("div.cpt_category_tree .menu-category-id"+{/literal}{$selected_category.categoryID}{literal}+"");
+	$(t).addClass("current open").parents("ul.menu-category-ul, li.menu-category-li").addClass("prebasic open");
+	
+	// var $cat_treer_check = $('span.cat_treer_check');
+	$("div.cpt_category_tree li span.menu-category-open").click(function(e){
+		// только средствами css
+		t = $(this).attr("data-id");
+		$(".menu-category-id" + t).toggleClass("open");
+
+		// медленное разворачивание 
+		t = $("ul.menu-category-id" + t);// alert(t);
+		if($(t).hasClass("open")){
+		  $(t).show("slow");
+		} else {
+		  $(t).hide("slow");
+		}
+		e.preventDefault();
+	});
+	
+	$("div.cpt_category_tree li").hover(
+		function(e){$(e.currentTarget).addClass("hover").prev().addClass("pre-hover");},
+		function(e){$(e.currentTarget).removeClass("hover").prev().removeClass("pre-hover");}
+	);
+
+});
+</script>
+<style type="text/css">
+  .cpt_category_tree ul ul{display:none}
+  div.cpt_category_tree ul .current, div.cpt_category_tree ul.prebasic{display:block}
+</style>
+{/literal}
