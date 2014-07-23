@@ -6,7 +6,7 @@
  * Name:     menu_category_r
  * Purpose:  menu category module (модуль для webasyst, меню категорий)
  *
- * @version				 2.1
+ * @version				 2.1 beta, free, как есть
  * @author	   Roman Shulyak roma78sha@gmail.com webplaneta.com.ua
  * --------------------------------------------------------------------
  */
