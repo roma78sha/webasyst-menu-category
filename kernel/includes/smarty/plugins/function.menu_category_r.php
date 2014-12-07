@@ -7,7 +7,7 @@
  * Purpose:  menu category module (модуль для webasyst, меню категорий)
  *
  * @version				 2.1 beta, free, как есть
- * @author	   Roman Shulyak roma78sha@gmail.com webplaneta.com.ua
+ * @author	    Roman Shulyak © декабрь 2014г   roma78sha@gmail.com
  * --------------------------------------------------------------------
  */
  
